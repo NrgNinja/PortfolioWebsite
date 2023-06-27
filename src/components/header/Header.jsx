@@ -4,6 +4,8 @@ import CTA from './CTA'
 import ME from '../../assets/RADtransparentHD.png'
 import HeaderSocials from './HeaderSocials'
 
+// adding a comment to test git
+
 const Header = () => {
   return (
     <header>
