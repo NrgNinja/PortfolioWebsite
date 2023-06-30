@@ -80,6 +80,7 @@
 
     .about__content p {
         margin: 1rem 0 1.5rem;
+        justify-content: center;
     }
 }
 
@@ -93,6 +94,7 @@
     .about__cards {
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+        /* align-items: center; */
     }
 
     .about__content {

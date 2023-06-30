@@ -1,9 +1,34 @@
 import React from 'react'
 import './footer.css'
+import {AiOutlineFacebook} from 'react-icons/ai'
+import {GrInstagram} from 'react-icons/gr'
+import {AiOutlineLinkedin} from 'react-icons/ai'
+import {BiCodeAlt} from 'react-icons/bi'
 
 const Footer = () => {
   return (
-    <section id='footer'>Footer</section>
+    <footer id="footer">
+      <a href="https://hackertyper.net/#" target='__blank' className='footer__logo'><BiCodeAlt/></a>
+      <ul className='permalinks'>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div className="footer__socials">
+        <a href="https://www.facebook.com/renato.diaz.7731/" target='_blank'><AiOutlineFacebook/></a>
+        <a href="https://www.instagram.com/itsnotrenato/?hl=en" target='_blank'><GrInstagram/></a>
+        <a href="https://www.linkedin.com/in/renato-diaz/" target='_blank'><AiOutlineLinkedin/></a>
+      </div>
+
+      <div className="footer__copyright">
+        <small>&copy; RENATO DIAZ. All Rights Reserved.</small>
+      </div>
+    </footer>
   )
 }
 

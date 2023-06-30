@@ -59,11 +59,12 @@ h1 {
 
 section {
     margin-top: 8rem;
+    margin-bottom: 19rem;
 }
 
 section > h2, section > h5 {
     text-align: center;
-    color: var(--color-light)
+    color: var(--color-light);
 }
 
 section > h2 {
