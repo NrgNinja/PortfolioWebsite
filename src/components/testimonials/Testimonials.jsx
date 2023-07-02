@@ -15,22 +15,22 @@ const data = [
   {
     avatar: AVTR1,
     name: 'Kanye West',
-    review: 'He is a great guy. Also I hate Jews.'
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita placeat suscipit, voluptas dolores pariatur perferendis. Consequatur neque error sequi minus nisi quibusdam officiis sit atque, ducimus omnis deserunt soluta deleniti ab tempora libero reprehenderit repellat veritatis enim modi? Non nulla optio deserunt facilis impedit suscipit, culpa vel temporibus saepe illum blanditiis rerum accusantium reprehenderit doloremque exercitationem in inventore dolor.'
   },
   {
     avatar: AVTR1,
     name: 'Kanye West',
-    review: 'He is a great guy. Also I hate Jews.'
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita placeat suscipit, voluptas dolores pariatur perferendis. Consequatur neque error sequi minus nisi quibusdam officiis sit atque, ducimus omnis deserunt soluta deleniti ab tempora libero reprehenderit repellat veritatis enim modi? Non nulla optio deserunt facilis impedit suscipit, culpa vel temporibus saepe illum blanditiis rerum accusantium reprehenderit doloremque exercitationem in inventore dolor.'
   },
   {
     avatar: AVTR1,
     name: 'Kanye West',
-    review: 'He is a great guy. Also I hate Jews.'
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita placeat suscipit, voluptas dolores pariatur perferendis. Consequatur neque error sequi minus nisi quibusdam officiis sit atque, ducimus omnis deserunt soluta deleniti ab tempora libero reprehenderit repellat veritatis enim modi? Non nulla optio deserunt facilis impedit suscipit, culpa vel temporibus saepe illum blanditiis rerum accusantium reprehenderit doloremque exercitationem in inventore dolor.'
   },
   {
     avatar: AVTR1,
     name: 'Kanye West',
-    review: 'He is a great guy. Also I hate Jews.'
+    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita placeat suscipit, voluptas dolores pariatur perferendis. Consequatur neque error sequi minus nisi quibusdam officiis sit atque, ducimus omnis deserunt soluta deleniti ab tempora libero reprehenderit repellat veritatis enim modi? Non nulla optio deserunt facilis impedit suscipit, culpa vel temporibus saepe illum blanditiis rerum accusantium reprehenderit doloremque exercitationem in inventore dolor.'
   },
 ]
 

@@ -14,10 +14,10 @@ const Portfolio = () =>
           <div className="portfolio__item-image">
             <img src={IMG1} alt="Project Title" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Lift Log: Fitness Record Tracker</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href="https://github.com/NrgNinja/HealthFitnessApp" className='btn' target='_blank'>Github</a>
+            <a href="https://lift-log.herokuapp.com/login" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
           {/* change this to whatever url you want */}
           {/* picuture must be 480 x 360 */}
@@ -26,10 +26,10 @@ const Portfolio = () =>
           <div className="portfolio__item-image">
             <img src={IMG1} alt="Project Title" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>The Lost Magic: A Medieval Fantasy Adventure</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href="https://drive.google.com/drive/folders/1lobmInvfC51iNCurIrLuB8hfzeQ0TYYg?usp=sharing" className='btn' target='_blank'>Presentations</a>
+            <a href="https://nrgninja.itch.io/the-lost-magic-a-medieval-fantasy-adventure" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
           {/* change this to whatever url you want */}
           {/* picuture must be 480 x 360 */}
@@ -38,46 +38,10 @@ const Portfolio = () =>
           <div className="portfolio__item-image">
             <img src={IMG1} alt="Project Title" />
           </div>
-          <h3>This is a portfolio item title</h3>
+          <h3>Personal Portfolio Website</h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-          {/* change this to whatever url you want */}
-          {/* picuture must be 480 x 360 */}
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="Project Title" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-          {/* change this to whatever url you want */}
-          {/* picture must be 480 x 360 */}
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="Project Title" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-          {/* change this to whatever url you want */}
-          {/* picuture must be 480 x 360 */}
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt="Project Title" />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://github.com" className='btn btn-primary' target='_blank'>Live Demo</a>
+            <a href="https://github.com/NrgNinja/PortfolioWebsite" className='btn' target='_blank'>Github</a>
+            <a href="https://renatodiaz.com" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
           {/* change this to whatever url you want */}
           {/* picuture must be 480 x 360 */}

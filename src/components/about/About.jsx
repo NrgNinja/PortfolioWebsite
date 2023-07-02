@@ -44,9 +44,14 @@ const About = () =>
 
           </div>
 
-          {/* this is where your biography paragraph goes */}
+          {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore unde fugit quo officiis delectus amet molestias ipsam alias vero fuga asperiores eum quidem nesciunt quibusdam culpa, quas nostrum maxime cum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt voluptatibus
+            repellendus fugit dolore nulla nihil necessitatibus eveniet officiis libero. Nobis 
+            asperiores natus voluptates totam officia. Velit provident, culpa, ipsum ea qui 
+            inventore illo explicabo sint, nemo reiciendis maiores aliquam fugiat tempore soluta 
+            alias dolorem aspernatur labore nostrum vel cumque dolores! Quos itaque consectetur 
+            soluta veritatis accusantium nostrum reprehenderit libero?
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
