@@ -1,15 +1,15 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/renato.png'
-import { FaAward } from 'react-icons/fa'
-import { FiUsers } from 'react-icons/fi'
-import { LuFolderOpen } from 'react-icons/lu'
+import { FaLaptopCode } from 'react-icons/fa'
+import { LuPalmtree } from 'react-icons/lu'
+import { TbSchool } from 'react-icons/tb'
 
 const About = () =>
 {
   return (
     <section id='about'>
-      <h5>Get To Know</h5>
+      <h5>Get To Know A Little More</h5>
       <h2>About Me</h2>
 
       <div className='container about__container'>
@@ -25,36 +25,36 @@ const About = () =>
 
             {/* here lies each individual card, you can add more by copying each article tag */}
             <article className='about__card'>
-              <FaAward className='about__icon' />
-              <h5>Experience</h5>
-              <small>5+ Years Programming</small>
+              <FaLaptopCode className='about__icon' />
+              <h5>Programming</h5>
+              <small>Over 5+ Years</small>
             </article>
 
             <article className='about__card'>
-              <FiUsers className='about__icon' />
-              <h5>Clients</h5>
-              <small>Other People</small>
+              <LuPalmtree className='about__icon' />
+              <h5>Based In</h5>
+              <small>Orlando, Florida</small>
             </article>
 
             <article className='about__card'>
-              <LuFolderOpen className='about__icon' />
-              <h5>Projects</h5>
-              <small>A Lot LOL</small>
+              <TbSchool className='about__icon' />
+              <h5>Graduation</h5>
+              <small>BCS | Fall 2024</small>
             </article>
 
           </div>
 
           {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nesciunt voluptatibus
-            repellendus fugit dolore nulla nihil necessitatibus eveniet officiis libero. Nobis 
-            asperiores natus voluptates totam officia. Velit provident, culpa, ipsum ea qui 
-            inventore illo explicabo sint, nemo reiciendis maiores aliquam fugiat tempore soluta 
-            alias dolorem aspernatur labore nostrum vel cumque dolores! Quos itaque consectetur 
-            soluta veritatis accusantium nostrum reprehenderit libero?
+          I am currently a senior pursuing a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
+          My interests lie in Machine Learning, Artifical Intelligence, & Game Development. Additionally, at my institution,
+          I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing undergradute
+          research opportunites as well. I'm a firm believer that you miss every single opportunity that you don't take.
+          After all, success starts with hard work and determination. I love to talk about all things tech, so why don't we have a conversation? Read more about me & let's connect on LinkedIn!
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+          <a href="#contact" className='btn btn-primary'>Contact Me</a>
+          <a href="https://www.linkedin.com/in/renato-diaz/" className='btn' target="_blank">LinkedIn</a>
         </div>
       </div>
     </section>

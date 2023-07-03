@@ -92,6 +92,10 @@ header {
         height: 100vh;
     }
 
+    .header__container h5 {
+        font-size: 0.72rem;
+    }
+
     .header__socials, .scroll__down {
         display: none;
     }
