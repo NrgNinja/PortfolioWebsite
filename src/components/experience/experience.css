@@ -68,4 +68,8 @@
         width: 100%;
         padding: 2rem 1rem;
     }
+
+    .experience__details h4 {
+        font-size: 0.8em;
+    }
 }
