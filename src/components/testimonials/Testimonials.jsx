@@ -14,8 +14,8 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar: AVTR1,
-    name: 'Kanye West',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita placeat suscipit, voluptas dolores pariatur perferendis. Consequatur neque error sequi minus nisi quibusdam officiis sit atque, ducimus omnis deserunt soluta deleniti ab tempora libero reprehenderit repellat veritatis enim modi? Non nulla optio deserunt facilis impedit suscipit, culpa vel temporibus saepe illum blanditiis rerum accusantium reprehenderit doloremque exercitationem in inventore dolor.'
+    name: 'Darya Farsinejad',
+    review: '“Renato exuberates a positive attitude and energy in any environment he is in. [He] takes leadership to the next level with his creativity and care for his craft. I have had the pleasure of observing and working alongside Renato through multiple programs and events. Renato is a mentor, team player, and dedicated worker!”'
   },
   {
     avatar: AVTR1,
