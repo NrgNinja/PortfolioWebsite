@@ -63,6 +63,7 @@
 .about__content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+    font-size: 1rem;
 }
 
 .about__content a.btn:not(:last-child) {
@@ -89,6 +90,10 @@
     .about__content {
         text-align: center; /* Center the content for medium devices */
     }
+
+    .about__content p {
+        font-size: 0.96rem;
+    }
 }
 
 /* MEDIA QUERIES (SMALL DEVICES) */
@@ -99,9 +104,8 @@
     }
 
     .about__cards {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
-        /* align-items: center; */
     }
 
     .about__content {
@@ -110,5 +114,26 @@
 
     .about__content p {
         margin: 1.5rem 0;
+        font-size: 0.8rem;
+    }
+
+    .about__card > h5 {
+        display: none;
+    }
+
+    .about__card > small {
+        display: none;
+    }
+
+    .about__card {
+        padding: 1rem;
+    }
+
+    .about__icon {
+        justify-content: center;
+        margin-bottom: 0rem;
+        align-items: center;
+        display: block;
+        margin: auto;
     }
 }

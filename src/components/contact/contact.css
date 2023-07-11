@@ -57,6 +57,11 @@ input, textarea {
     font-family: 'Fira Sans';
 }
 
+p {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     .container.contact__container {
@@ -68,6 +73,16 @@ input, textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact__options {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .contact__option h5 {
+        display: none;
     }
 }
 
@@ -81,5 +96,22 @@ input, textarea {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact__options {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .contact__option h5 {
+        display: none;
+    }
+
+    .contact__option h4 {
+        font-size: 0.83rem;
+    }
+
+    .contact__option a {
+        font-size: 0.4rem;
     }
 }
