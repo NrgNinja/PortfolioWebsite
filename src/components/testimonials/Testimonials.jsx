@@ -1,9 +1,10 @@
 import React from 'react'
 import './testimonials.css'
 import AVTR1 from '../../assets/ye2.png'
+import AVTR2 from '../../assets/darya.png'
 
 // import Swiper core and required modules
-import {Pagination, A11y } from 'swiper';
+import { Pagination, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,7 +14,7 @@ import 'swiper/css/pagination';
 
 const data = [
   {
-    avatar: AVTR1,
+    avatar: AVTR2,
     name: 'Darya Farsinejad',
     review: '“Renato exuberates a positive attitude and energy in any environment he is in. [He] takes leadership to the next level with his creativity and care for his craft. I have had the pleasure of observing and working alongside Renato through multiple programs and events. Renato is a mentor, team player, and dedicated worker!”'
   },
@@ -43,7 +44,6 @@ const Testimonials = () =>
 
       <Swiper className="container testimonials__container"
         // install Swiper modules
-        // install Swiper modules
         modules={[Pagination, A11y]}
         spaceBetween={40}
         slidesPerView={1}
@@ -56,18 +56,17 @@ const Testimonials = () =>
             return (
               <SwiperSlide key={index} className='testimonial'>
                 <div className="client__avatar">
-                  <img src={avatar} />
+                  <img src={avatar} alt="profile pic"/>
                 </div>
                 <h5 className='client__name'>{name}</h5>
                 <small className='client__review'>
                   {review}
                 </small>
-                {/* pic must be 150 x 150 */}
+                {/* pic must be 150 x 150 for best results */}
               </SwiperSlide>
             )
           })
         }
-
       </Swiper>
     </section>
   )
