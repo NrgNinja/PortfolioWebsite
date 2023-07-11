@@ -33,8 +33,8 @@ const Contact = () => {
         <div className="contact__options">
         <article className='contact__option'>
           <HiOutlineMail className='contact__option-item'/>
-          <h4>Email</h4>
-          <h5>diazrenato2001@outlook.com</h5>
+          <h4>Outlook</h4>
+          <h5>diazrenato2001</h5>
           <a href="mailto:diazrenato2001@outlook.com" target="_blank">Send Me An Email</a>
         </article>
         <article className='contact__option'>
