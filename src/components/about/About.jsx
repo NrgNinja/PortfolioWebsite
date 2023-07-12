@@ -47,9 +47,9 @@ const About = () =>
           {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
           <p>
           I am currently a senior pursuing a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
-          My interests lie in Machine Learning, Artifical Intelligence, & Game Development. Additionally, at my institution,
-          I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing undergradute
-          research opportunites as well. I'm a firm believer that you miss every single opportunity that you don't take.
+          My interests lie in Machine Learning, Artificial Intelligence, & Game Development. Additionally, at my institution,
+          I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing undergraduate
+          research opportunities as well. I'm a firm believer that you miss every single opportunity that you don't take.
           After all, success starts with hard work and determination. I love to talk about all things tech, so why don't we have a conversation? Read more about me & let's connect on LinkedIn!
           </p>
 
