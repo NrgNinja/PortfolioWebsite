@@ -16,7 +16,7 @@ const About = () =>
 
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="Headshot of Renato" />
           </div>
         </div>
 
@@ -54,7 +54,7 @@ const About = () =>
           </p>
 
           <a href="#contact" className='btn btn-primary'>Contact Me</a>
-          <a href="https://www.linkedin.com/in/renato-diaz/" className='btn' target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/renato-diaz/" className='btn' target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>

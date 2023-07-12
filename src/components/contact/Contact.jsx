@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Let's Get In Touch!</h5>
+      <h5>Let's Talk Business</h5>
       <h2>Contact Information</h2>
 
       <div className="container contact__container">
@@ -35,19 +35,19 @@ const Contact = () => {
           <HiOutlineMail className='contact__option-item'/>
           <h4>Outlook</h4>
           <h5>diazrenato2001</h5>
-          <a href="mailto:diazrenato2001@outlook.com" target="_blank">Send Me An Email</a>
+          <a href="mailto:diazrenato2001@outlook.com" target="_blank" rel="noreferrer">Send Me An Email</a>
         </article>
         <article className='contact__option'>
           <RiMessengerLine className='contact__option-item'/>
           <h4>Messenger</h4>
           <h5>Renato A. Diaz</h5>
-          <a href="https://m.me/renato.diaz.7731" target="_blank">Send Me A Message</a>
+          <a href="https://m.me/renato.diaz.7731" target="_blank" rel="noreferrer">Send Me A Message</a>
         </article>
         <article className='contact__option'>
           <ImWhatsapp className='contact__option-item'/>
           <h4>WhatsApp</h4>
           <h5>+1 (407) 867-5309</h5>
-          <a href="https://api.whatsapp.com/send?phone=3216631178" target="_blank">Send Me A Text</a>
+          <a href="https://api.whatsapp.com/send?phone=3216631178" target="_blank" rel="noreferrer">Send Me A Text</a>
         </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
