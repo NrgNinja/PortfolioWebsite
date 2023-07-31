@@ -4,6 +4,7 @@ import './testimonials.css'
 import AVTR1 from '../../assets/ye2.png'
 import AVTR2 from '../../assets/darya.png'
 import AVTR3 from '../../assets/gian.png'
+import AVTR4 from '../../assets/momal.png'
 
 // import Swiper core and required modules
 import { Pagination, A11y } from 'swiper';
@@ -26,9 +27,9 @@ const data = [
     review: '“Renato is a hard-working individual that exuberates a positive attitude and energy in any environment that he is in. He takes leadership to the next level with his unique creativity and care for his craft. I have had the pleasure of observing and working alongside Renato through multiple programs and events [with L.E.A.R.N.]. Renato is a mentor, team player, and most definitely a dedicated worker!”'
   },
   {
-    avatar: AVTR1,
-    name: 'Kanye West',
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita placeat suscipit, voluptas dolores pariatur perferendis. Consequatur neque error sequi minus nisi quibusdam officiis sit atque, ducimus omnis deserunt soluta deleniti ab tempora libero reprehenderit repellat veritatis enim modi? Non nulla optio deserunt facilis impedit suscipit, culpa vel temporibus saepe illum blanditiis rerum accusantium reprehenderit doloremque exercitationem in inventore dolor.'
+    avatar: AVTR4,
+    name: 'Momal Ijaz - Software Engineer at super.AI',
+    review: '"I have personally worked with Renato, and I think that his drive for learning, his "getting-done" mindset, and his "going extra mile" attitude has really inspired me and helped us both pull off a research publication that got accepted into CVPR 2022! I would totally recommend him for potential great challenging projects. I can assure you he will surprise you!"'
   },
   {
     avatar: AVTR1,
