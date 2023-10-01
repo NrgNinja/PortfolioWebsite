@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/renato.png'
+import ME from '../../assets/renato2.png'
 import { FaLaptopCode } from 'react-icons/fa'
 import { LuPalmtree } from 'react-icons/lu'
 import { TbSchool } from 'react-icons/tb'
