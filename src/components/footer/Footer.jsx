@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__copyright">
-        <small><a href="https://drive.google.com/file/d/1bteQ_t0mUiPN8bQEDtB_gcTEdY2ZojOK/view?usp=sharing" target='_blank' rel="noreferrer">&copy;</a> RENATO DIAZ. All Rights Reserved.</small>
+        <small><a href="https://drive.google.com/file/d/1csbxwerEyr6JmRaLWi0dbTrtIE8gdEkU/view?usp=sharing" target='_blank' rel="noreferrer">&copy;</a> RENATO DIAZ. All Rights Reserved.</small>
       </div>
     </footer>
   )

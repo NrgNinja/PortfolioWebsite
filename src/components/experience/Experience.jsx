@@ -34,8 +34,8 @@ const Experience = () =>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>C</h4>
-                <small className='text-light'>Experienced</small>
+                <h4>C/C++</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
 
@@ -51,14 +51,14 @@ const Experience = () =>
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>C#</h4>
-                <small className='text-light'>Intermediate</small>
+                <small className='text-light'>Basic</small>
               </div>
             </article>
 
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>C++</h4>
+                <h4>Rust</h4>
                 <small className='text-light'>Basic</small>
               </div>
             </article>
@@ -81,7 +81,7 @@ const Experience = () =>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Windows/macOS/Linux</h4>
+                <h4>Linux (Ubuntu)</h4>
                 <small className='text-light'>Experienced</small>
               </div>
             </article>
@@ -97,7 +97,7 @@ const Experience = () =>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Kibana (Elasticsearch)</h4>
+                <h4>Kibana</h4>
                 <small className='text-light'>Basic</small>
               </div>
             </article>
@@ -105,7 +105,7 @@ const Experience = () =>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Agile/Scrum</h4>
+                <h4>Unity</h4>
                 <small className='text-light'>Experienced</small>
               </div>
             </article>
@@ -113,7 +113,7 @@ const Experience = () =>
             <article className="experience__details">
               <BsFillPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Unity/DevOps</h4>
+                <h4>Agile/Scrum (Jira)</h4>
                 <small className='text-light'>Experienced</small>
               </div>
             </article>

@@ -1,11 +1,11 @@
 import React from 'react'
-import RESUME from '../../assets/resumeSept2023.pdf'
+import RESUME from '../../assets/resumeJuly2024.pdf'
 
 const CTA = () => {
   return (
     <div className='cta'>
         <a href={RESUME} download className='btn'>Download Resume (PDF)</a>
-        <a href="#contact" className='btn btn-primary'>Let's Get In Touch</a>
+        <a href="https://www.linkedin.com/in/renato-diaz/" className=' btn btn-primary' target="_blank" rel="noreferrer">LinkedIn</a>
     </div>
   )
 }

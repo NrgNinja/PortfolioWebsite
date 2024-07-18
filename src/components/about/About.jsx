@@ -39,7 +39,7 @@ const About = () =>
             <article className='about__card'>
               <TbSchool className='about__icon' />
               <h5>Graduation</h5>
-              <small>BCS | Fall 2024</small>
+              <small>UCF | Fall 2024</small>
             </article>
 
           </div>
@@ -47,14 +47,16 @@ const About = () =>
           {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
           <p>
           I am currently a senior pursuing a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
-          My interests lie in Machine Learning, Artificial Intelligence, & Game Development. Additionally, at my institution,
-          I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing undergraduate
-          research opportunities as well. I'm a firm believer that you miss every single opportunity that you don't take.
-          After all, success starts with hard work and determination. I love to talk about all things tech, so why don't we have a conversation? Read more about me & let's connect on LinkedIn!
+          My interests lie in Big Data, Machine Learning, Artificial Intelligence, & Game Development. Additionally, at my institution,
+          I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing
+          internship or research opportunities as well. I'm a firm believer that you miss every single opportunity that you don't take.
+          After all, success starts with hard work and determination. I love to talk about all things tech, so why don't we have a conversation? Feel free to reach out!
           </p>
 
           <a href="#contact" className='btn btn-primary'>Contact Me</a>
-          <a href="https://www.linkedin.com/in/renato-diaz/" className='btn' target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/NrgNinja" className='btn' target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AETOMgEdzcW9UbzUVRLRKDZhZE3AdR2l7OF4yP3HvxBK5zzN4CDEYPHL5xendVwRZ5VGJaMIgPDlaPpFpdJ_Pmw30iFn&user=cgbwfMUAAAAJ" className='btn btn-primary' target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://leetcode.com/u/NrgNinja/" className='btn' target="_blank" rel="noreferrer">LeetCode</a>
         </div>
       </div>
     </section>

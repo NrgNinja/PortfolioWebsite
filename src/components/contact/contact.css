@@ -69,6 +69,10 @@ p {
         gap: 2rem;
     }
 
+    .contact__option {
+        width: 40%;
+    }
+
     form {
         display: flex;
         flex-direction: column;
@@ -103,6 +107,10 @@ p {
         justify-content: center;
     }
 
+    .contact__option {
+        width: 40%;
+    }
+
     .contact__option h5 {
         display: none;
     }
@@ -112,6 +120,6 @@ p {
     }
 
     .contact__option a {
-        font-size: 0.4rem;
+        font-size: 0.7rem;
     }
 }

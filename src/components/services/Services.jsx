@@ -17,60 +17,60 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Backend development.</p>
+              <p>Backend development</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Python Programming Language.</p>
+              <p>Python Programming Language</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Automation Squad.</p>
+              <p>Automation Squad</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Agile (Scrum) Framework.</p>
+              <p>Agile (Scrum) Methodologies</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Unit & integration tests for prod.</p>
+              <p>Unit & integration tests for prod</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Remote position (based in CA).</p>
+              <p>Remote position (based in CA)</p>
             </li>
           </ul>
         </article>
         {/* END OF UI/UX Section */}
         <article className="service">
           <div className="service__head">
-            <h3>Undergraduate Researcher for the UCF Center For Research In Computer Vision</h3>
+            <h3>Intern, Big Data Researcher at Illinois Institute of Technology</h3>
           </div>
 
           <ul className='service__list'>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Part of the LEARN Program at UCF.</p>
+              <p>Backend development</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>A.I. Nurse Assistance Solution.</p>
+              <p>Rust Programming Language</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Dr. Chen Chen & Momal Ijaz.</p>
+              <p>DataSys Lab with Dr. Ioan Raicu</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Published research paper (CVPR).</p>
+              <p>Big Data & Blockchain Technology</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Presented at research conferences.</p>
+              <p>Cryptographic hash tool for PoS</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>On-site position (based in FL).</p>
+              <p>On-site position (based in IL)</p>
             </li>
           </ul>
         </article>
@@ -83,27 +83,27 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Backend development.</p>
+              <p>Backend development</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Java Programming Language.</p>
+              <p>Java Programming Language</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Cloud Licensing Team (Nimbus).</p>
+              <p>Cloud Licensing Team (Nimbus)</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Agile (Scrum) Framework.</p>
+              <p>Agile (Kanban) Methodologies</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Anomaly detectors for logs setup.</p>
+              <p>Anomaly detectors for logs setup</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Remote position (based in CA).</p>
+              <p>Remote position (based in CA)</p>
             </li>
           </ul>
         </article>

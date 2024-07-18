@@ -29,12 +29,12 @@ const data = [
   },
   {
     avatar: AVTR4,
-    name: 'Momal Ijaz - Software Engineer at super.AI',
+    name: 'Momal Ijaz - ML Software Engineer at Locai',
     review: '"I have personally worked with Renato, and I think that his drive for learning, his "getting-done" mindset, and his "going extra mile" attitude has really inspired me and helped us both pull off a research publication that got accepted into CVPR 2022! I would totally recommend him for potential great challenging projects. I can assure you he will surprise you!"'
   },
   {
     avatar: AVTR3,
-    name: 'Gianfranco Amati - UI/UX Researcher at UCF',
+    name: 'Gianfranco Amati - Relationship Banker at Bank of America',
     review: '"Renato\'s positive energy is contagious, fueling his incredible work ethic and passion for innovation. His attention to detail is unmatched, ensuring every project is executed flawlessly. Beyond his talents, Renato\'s thoughtfulness and excellent people skills make him a pleasure to work with. I am grateful to have worked with him in the past performing research & I\'m also super lucky to call him my friend.”'
   },
   {
