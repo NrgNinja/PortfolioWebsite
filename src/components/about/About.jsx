@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/renato2.png'
-import { FaLaptopCode } from 'react-icons/fa'
+import { FaGlobeAmericas } from "react-icons/fa";
 import { LuPalmtree } from 'react-icons/lu'
 import { TbSchool } from 'react-icons/tb'
 
@@ -25,9 +25,9 @@ const About = () =>
 
             {/* here lies each individual card, you can add more by copying each article tag */}
             <article className='about__card'>
-              <FaLaptopCode className='about__icon' />
-              <h5>Programming</h5>
-              <small>Over 5+ Years</small>
+            <FaGlobeAmericas className='about__icon'/>
+              <h5>Citizenship</h5>
+              <small>US Citizen</small>
             </article>
 
             <article className='about__card'>
@@ -47,9 +47,9 @@ const About = () =>
           {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
           <p>
           I am currently a senior pursuing a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
-          My interests lie in Big Data, Machine Learning, Artificial Intelligence, & Game Development. Additionally, at my institution,
+          My interests lie in Big Data, Machine Learning, Artificial Intelligence, & Game Development. Additionally,
           I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing
-          internship or research opportunities as well. I'm a firm believer that you miss every single opportunity that you don't take.
+          internship or research opportunities as well. <br /> <br /> I'm a firm believer that you miss every single opportunity that you don't take.
           After all, success starts with hard work and determination. I love to talk about all things tech, so why don't we have a conversation? Feel free to reach out!
           </p>
 

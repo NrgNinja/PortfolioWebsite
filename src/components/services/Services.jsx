@@ -11,7 +11,7 @@ const Services = () => {
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>Intern, Software Engineer at Endpoint</h3>
+            <h3>Intern, Software Engineer <br /> at Endpoint</h3>
           </div>
 
           <ul className='service__list'>
@@ -44,7 +44,7 @@ const Services = () => {
         {/* END OF UI/UX Section */}
         <article className="service">
           <div className="service__head">
-            <h3>Intern, Big Data Researcher at Illinois Institute of Technology</h3>
+            <h3>Intern, Big Data Researcher <br /> at Illinois Tech</h3>
           </div>
 
           <ul className='service__list'>
@@ -66,7 +66,7 @@ const Services = () => {
             </li>
             <li>
               <CgStark className='service__list-icon'/>
-              <p>Cryptographic hash tool for PoS</p>
+              <p>Cryptographic hash tool for PoSpace</p>
             </li>
             <li>
               <CgStark className='service__list-icon'/>
@@ -77,7 +77,7 @@ const Services = () => {
         {/* END OF Web Development */}
         <article className="service">
           <div className="service__head">
-            <h3>Intern, Software Engineer at Autodesk</h3>
+            <h3>Intern, Software Engineer <br /> at Autodesk</h3>
           </div>
 
           <ul className='service__list'>
