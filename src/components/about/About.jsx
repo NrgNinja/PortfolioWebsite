@@ -33,24 +33,23 @@ const About = () =>
             <article className='about__card'>
               <LuPalmtree className='about__icon' />
               <h5>Based In</h5>
-              <small>Orlando, Florida</small>
+              <small>Greater Tampa Bay</small>
             </article>
 
             <article className='about__card'>
               <TbSchool className='about__icon' />
-              <h5>Graduation</h5>
-              <small>UCF | Fall 2024</small>
+              <h5>B.S. Degree</h5>
+              <small>Computer Science</small>
             </article>
 
           </div>
 
           {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
           <p>
-          I am currently a senior pursuing a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
-          My interests lie in Big Data, Machine Learning, Artificial Intelligence, & Game Development. Additionally,
-          I am an undergraduate researcher and work as a Peer Mentor for students interested in pursuing
-          internship or research opportunities as well. <br /> <br /> I'm a firm believer that you miss every single opportunity that you don't take.
-          After all, success starts with hard work and determination. I love to talk about all things tech, so why don't we have a conversation? Feel free to reach out!
+          I am a Software Engineer for Honeywell Aerospace developing test software for various vehicles & aircrafts. I graduated with a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
+          My interests lie in Big Data, Machine Learning, Artificial Intelligence, & Game Development. While in my undergrad, I did research on Robot Vision & AI at UCF, Assistive Technology at Cornell University, and Blockchain Consensus Algorithms at Illinois Tech.
+          <br /> <br /> I firmly believe that you miss every opportunity that you don't take, and
+          I love to talk about all things tech, so let's chat! Feel free to reach out!
           </p>
 
           <a href="#contact" className='btn btn-primary'>Contact Me</a>
