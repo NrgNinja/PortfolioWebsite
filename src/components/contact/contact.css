@@ -1,6 +1,6 @@
 .container.contact__container {
-    width: 58%;
-    display: grid;
+    width: 60%;
+    /* display: grid; */
     grid-template-columns: 30% 58%;
     gap: 12%;
 }
@@ -21,9 +21,9 @@
 }
 
 .contact__option:hover {
-    background: transparent;
+    background: var(--color-hover);
     border-color: var(--color-primary-variant);
-    cursor: default;
+    cursor: pointer;
 }
 
 .contact__option-icon {

@@ -5,13 +5,13 @@ import {CgStark} from 'react-icons/cg'
 const Services = () => {
   return (
     <section id='services'>
-      <h5>What I Have To Offer</h5>
-      <h2>Notable Service & Work Experience</h2>
-
+      <h2>Work Experience</h2>
       <div className="container services__container">
+
+      {/* Work Experience 1 */}
         <article className="service">
           <div className="service__head">
-            <h3>Intern, Software Engineer <br /> at Endpoint</h3>
+            <h3>SWE Intern @ Endpoint</h3>
           </div>
 
           <ul className='service__list'>
@@ -41,10 +41,12 @@ const Services = () => {
             </li>
           </ul>
         </article>
-        {/* END OF UI/UX Section */}
+        {/* End of Work Experience 1 */}
+
+        {/* Work Experience 2 */}
         <article className="service">
           <div className="service__head">
-            <h3>Intern, Big Data Researcher <br /> at Illinois Tech</h3>
+            <h3>Big Data SWE Intern @ Illinois Tech</h3>
           </div>
 
           <ul className='service__list'>
@@ -74,10 +76,12 @@ const Services = () => {
             </li>
           </ul>
         </article>
-        {/* END OF Web Development */}
+        {/* End of Work Experience 2 */}
+
+        {/* Work Experience 3 */}
         <article className="service">
           <div className="service__head">
-            <h3>Intern, Software Engineer <br /> at Autodesk</h3>
+            <h3>SWE Intern @ Autodesk</h3>
           </div>
 
           <ul className='service__list'>
@@ -107,7 +111,43 @@ const Services = () => {
             </li>
           </ul>
         </article>
-        {/* END OF Content Creation */}
+        {/* End of Work Experience 3 */}
+
+        {/* Work Experience 4 */}
+        <article className="service">
+          <div className="service__head">
+            <h3>SWE @ Honeywell Aerospace</h3>
+          </div>
+
+          <ul className='service__list'>
+            <li>
+              <CgStark className='service__list-icon'/>
+              <p>Fullstack development</p>
+            </li>
+            <li>
+              <CgStark className='service__list-icon'/>
+              <p>C | C# | C++ Programming Language</p>
+            </li>
+            <li>
+              <CgStark className='service__list-icon'/>
+              <p>Space & Defense Department</p>
+            </li>
+            <li>
+              <CgStark className='service__list-icon'/>
+              <p>Agile (Kanban) Methodologies</p>
+            </li>
+            <li>
+              <CgStark className='service__list-icon'/>
+              <p>Embedded systems programming</p>
+            </li>
+            <li>
+              <CgStark className='service__list-icon'/>
+              <p>On-site position (based in FL)</p>
+            </li>
+          </ul>
+        </article>
+        {/* End of Work Experience 4 */}
+
       </div>
     </section>
   )

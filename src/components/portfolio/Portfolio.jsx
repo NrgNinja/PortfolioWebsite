@@ -10,7 +10,6 @@ const Portfolio = () =>
 {
   return (
     <section id='portfolio'>
-      <h5>My Recent Work</h5>
       <h2>Project Portfolio</h2>
 
       <div className="container portfolio__container">

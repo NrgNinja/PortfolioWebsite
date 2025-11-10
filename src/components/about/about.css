@@ -40,9 +40,9 @@
 }
 
 .about__card:hover {
-    background: transparent;
+    background: var(--color-hover);
     border-color: var(--color-primary-variant);
-    cursor: default;
+    cursor: pointer;
 }
 
 .about__icon {

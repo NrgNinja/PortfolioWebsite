@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap');
-/* this is a google font "Fira Sans" */
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+/* this is a google font "Fira Sans" or "Exo" */
 
 * {
     margin: 0;
@@ -14,8 +16,9 @@
 :root {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
+    --color-primary: #2084cb;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-hover: rgb(5, 16, 58);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
@@ -35,7 +38,7 @@ html {
 }
 
 body {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Genos', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
@@ -50,11 +53,13 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 5rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
 }
 
 section {

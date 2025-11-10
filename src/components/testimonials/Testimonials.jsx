@@ -48,7 +48,6 @@ const Testimonials = () =>
 {
   return (
     <section id='testimonials'>
-      <h5>Reviews From Faculty, Managers, & Professors</h5>
       <h2>Testimonials</h2>
 
       <Swiper className="container testimonials__container"

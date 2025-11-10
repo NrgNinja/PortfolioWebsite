@@ -29,20 +29,18 @@ const Contact = () => {
       <h2>Contact Information</h2>
 
       <div className="container contact__container">
-        <div className="contact__options">
+        {/* <div className="contact__options">
         <article className='contact__option'>
           <HiOutlineMail className='contact__option-item'/>
           <h4>Outlook</h4>
-          <h5>diazrenato2001</h5>
           <a href="mailto:diazrenato2001@outlook.com" target="_blank" rel="noreferrer">Email Me</a>
         </article>
         <article className='contact__option'>
           <RiMessengerLine className='contact__option-item'/>
           <h4>Messenger</h4>
-          <h5>Renato A. Diaz</h5>
           <a href="https://m.me/renato.diaz.7731" target="_blank" rel="noreferrer">Message Me</a>
         </article>
-        </div>
+        </div> */}
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Type Your Full Name' required onChange={() => setMessageSent(false)} />
           <input type="email" name='email' placeholder='Type Your Email Address' required onChange={() => setMessageSent(false)} />
