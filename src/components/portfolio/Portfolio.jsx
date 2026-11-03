@@ -3,7 +3,7 @@ import './portfolio.css'
 import IMG2 from '../../assets/tlm.png'
 import IMG3 from '../../assets/lift-log.png'
 import IMG4 from '../../assets/nurse.png'
-import IMG5 from '../../assets/vault.png'
+import IMG5 from '../../assets/vault-960.webp'
 import IMG6 from '../../assets/logo-color.png'
 
 const Portfolio = () =>
@@ -15,7 +15,7 @@ const Portfolio = () =>
       <div className="container portfolio__container">
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG3} alt="Project Title" />
+            <img src={IMG3} loading="lazy" alt="Lift Log fitness tracker" />
           </div>
           <h3>Lift Log: <br />Fitness Record Tracker</h3>
           <div className="portfolio__item-cta">
@@ -27,7 +27,7 @@ const Portfolio = () =>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG2} alt="The Lost Magic" />
+            <img src={IMG2} loading="lazy" alt="The Lost Magic" />
           </div>
           <h3>The Lost Magic: <br /> A Medieval Fantasy Adventure</h3>
           <div className="portfolio__item-cta">
@@ -39,7 +39,7 @@ const Portfolio = () =>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG4} alt="Project Title" />
+            <img src={IMG4} loading="lazy" alt="Nursing activity recognition research" />
           </div>
           <h3>Multimodal Transformer for Nursing Activity Recognition</h3>
           <div className="portfolio__item-cta">
@@ -51,7 +51,7 @@ const Portfolio = () =>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG6} alt="Project Title" />
+            <img src={IMG6} loading="lazy" alt="ASL-Live translator" />
           </div>
           <h3>ASL-Live: <br /> ASL-to-Text Translator</h3>
           <div className="portfolio__item-cta">
@@ -63,7 +63,7 @@ const Portfolio = () =>
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG5} alt="Project Title" />
+            <img src={IMG5} loading="lazy" alt="Vault-76 hash tool" />
           </div>
           <h3>Vault-76: A Multithreaded Cryptographic Hash Tool</h3>
           <div className="portfolio__item-cta">

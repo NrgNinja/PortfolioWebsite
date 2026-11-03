@@ -4,47 +4,55 @@ import {TbHome} from 'react-icons/tb'
 import {BiUser} from 'react-icons/bi'
 import {RiLightbulbFlashLine} from 'react-icons/ri'
 import {MdOutlineHandshake} from 'react-icons/md'
-import {BiMessageDetail} from 'react-icons/bi'
+import {BiMessageDetail, BiGridAlt, BiChat} from 'react-icons/bi'
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+  const [activeNav, setActiveNav] = useState('#home-top')
 
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          setActiveNav(`#${entry.target.id}`)
+    let frame = null
+    // Use section positions so long sections and gaps keep a predictable active link.
+    const updateActiveSection = () => {
+      const sections = document.querySelectorAll('header[id], main section[id]')
+      let current = '#home-top'
+      sections.forEach(section => {
+        if (section.getBoundingClientRect().top <= window.innerHeight * 0.35) {
+          current = `#${section.id}`
         }
       })
-    }, { threshold: 0.3 }) // adjust the threshold as needed
-
-    const sections = document.querySelectorAll('section')
-    sections.forEach(section => {
-      observer.observe(section)
-    })
-
-    // Add an observer for the 'home-top' div
-    const homeTop = document.querySelector('#home-top') // New line
-    observer.observe(homeTop) // New line
-
+      setActiveNav(current)
+      frame = null
+    }
+    const onScroll = () => {
+      if (frame === null) frame = requestAnimationFrame(updateActiveSection)
+    }
+    updateActiveSection()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
     return () => {
-      sections.forEach(section => {
-        observer.unobserve(section)
-      })
-
-      // Remove the observer from the 'home-top' div when cleaning up
-      observer.unobserve(homeTop) // New line
+      window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
+      if (frame !== null) cancelAnimationFrame(frame)
     }
   }, [])
 
   return (
-    <nav>
-      {/* Changed the condition in the className to highlight when either '#home' or '#home-top' is active */}
-      <a href="#home-top" onClick={() => setActiveNav('#home-top')} className={activeNav === '#home' || activeNav === '#home-top' ? 'active' : ''}><TbHome/></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><BiUser/></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><RiLightbulbFlashLine/></a>
-      <a href="#services" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : '' || activeNav === '#portfolio' ? 'active' : '' || activeNav === '#testimonials' ? 'active' : ''}><MdOutlineHandshake/></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageDetail/></a>
+    <nav aria-label="Main navigation">
+      {[
+        ['#home-top', 'Home', TbHome],
+        ['#about', 'About', BiUser],
+        ['#experience', 'Technical skills', RiLightbulbFlashLine],
+        ['#services', 'Work experience', MdOutlineHandshake],
+        ['#portfolio', 'Projects', BiGridAlt],
+        ['#testimonials', 'Testimonials', BiChat],
+        ['#contact', 'Contact', BiMessageDetail],
+      ].map(([href, label, Icon]) => (
+        <a key={href} href={href} aria-label={label} title={label}
+          aria-current={activeNav === href ? 'location' : undefined}
+          className={activeNav === href ? 'active' : ''}>
+          <Icon aria-hidden="true" />
+        </a>
+      ))}
     </nav>
   )
 }

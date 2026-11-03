@@ -1,121 +1,87 @@
 header {
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+  padding: clamp(4rem, 10vw, 7rem) 0 2rem;
 }
 
 .header__container {
-    text-align: center;
-    height: 100%;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
-/* CTA BUTTONS */
+.header__container h2 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  margin-top: 1rem;
+  font-weight: 400;
+  letter-spacing: -.02em;
+}
+
 .cta {
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  margin-top: 2rem;
 }
 
-/* HEADER SOCIALS */
-.header__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
-}
-
-.header__socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-primary);
-}
-
-/* ME */
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 22rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
+  width: min(100%, 24rem);
+  margin: 3rem auto 0;
+  aspect-ratio: 1;
+  border-radius: 48% 48% 1.5rem 1.5rem;
+  overflow: hidden;
+  background: linear-gradient(160deg, #53647d, #1b1d22 85%);
 }
 
-/* SCROLL DOWN */
+.me img {
+  height: 100%;
+  object-position: top;
+}
+
+.cta__linkedin {
+  width: 48px;
+  padding-inline: 0;
+  font-size: 1.2rem;
+}
+
+.cta__linkedin svg {
+  /* Enlarge the logo visually without affecting the button's layout. */
+  width: 10px;
+  height: 10px;
+  transform: scale(2.7);
+}
+
 .scroll__down {
-    position: absolute;
-    right: -2.3rem;
-    bottom: 7rem;
-    transform: rotate(90deg);
-    font-weight: 500;
-    font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: .8rem;
+  color: var(--color-light);
 }
 
-/* MEDIA QUERIES (MEDIUM DEVICES) */
-@media screen and (max-width: 1024px) {
-    header {
-        height: 95vh;
+@media (prefers-reduced-motion: no-preference) {
+  .header__container h1 {
+    animation: arrive 700ms ease both;
+  }
+  .me {
+    animation: arrive 900ms 100ms ease both;
+  }
+  @keyframes arrive {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
     }
-
-    .me {
-        margin-top: 6rem;
-        width: 36rem;
-        height: 36rem;
-        position: absolute;
-        left: calc(50% - 18rem);
-        border-radius: 12rem 12rem 0 0;
-        overflow: hidden;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    .cta {
-        margin-top: 5rem;
-    }
-
-    .scroll__down {
-        right: -4.5rem;
-        bottom: 7rem;
-        font-weight: 500;
-        font-size: 1rem;
-    }
+  }
 }
 
-/* MEDIA QUERIES (SMALL DEVICES) */
-@media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
-        padding-top: 3rem;
-    }
-
-    .header__container h5 {
-        font-size: 0.69rem;
-    }
-
-    .header__socials, .scroll__down {
-        display: none;
-    }
-
-    .cta {
-        margin-top: 2rem;
-    }
-
-    .cta a {
-        font-size: 0.75rem;
-    }
-
-    .me {
-        width: 20rem;
-        height: 20rem;
-        position: absolute;
-        left: calc(50% - 10rem);
-        margin-top: 4rem;
-        border-radius: 12rem 12rem 0 0;
-        overflow: hidden;
-    }
+/* Keep icon-only CTA text available to assistive technology. */
+.cta__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

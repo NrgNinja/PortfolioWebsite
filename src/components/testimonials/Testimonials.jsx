@@ -55,16 +55,14 @@ const Testimonials = () =>
         modules={[Pagination, A11y]}
         spaceBetween={40}
         slidesPerView={1}
-        pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}>
+        pagination={{ clickable: true }}>
         {
           data.map(({ avatar, name, review }, index) =>
           {
             return (
               <SwiperSlide key={index} className='testimonial'>
                 <div className="client__avatar">
-                  <img src={avatar} alt="profile pic"/>
+                  <img src={avatar} alt={name} loading="lazy"/>
                 </div>
                 <h5 className='client__name'>{name}</h5>
                 <small className='client__review'>

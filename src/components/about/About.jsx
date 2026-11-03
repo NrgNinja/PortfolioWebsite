@@ -1,21 +1,23 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/landscape.png'
-import { FaGlobeAmericas } from "react-icons/fa";
+import ME from '../../assets/landscape-1200.webp'
+import ME_SMALL from '../../assets/landscape-640.webp'
+import { FaGithub, FaGlobeAmericas } from "react-icons/fa";
 import { LuPalmtree } from 'react-icons/lu'
 import { TbSchool } from 'react-icons/tb'
+import { SiGooglescholar, SiLeetcode } from 'react-icons/si'
 
 const About = () =>
 {
   return (
     <section id='about'>
-      <h2>About Me</h2>
+      <h2>About</h2>
 
       <div className='container about__container'>
 
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="Headshot of Renato" />
+            <img src={ME} srcSet={`${ME_SMALL} 640w, ${ME} 1200w`} sizes="(max-width: 800px) 90vw, 40vw" width="1200" height="1200" alt="Renato outdoors" loading="lazy" decoding="async" />
           </div>
         </div>
 
@@ -43,16 +45,18 @@ const About = () =>
 
           </div>
 
-          {/* this is where your biography paragraph goes, DO NOT GO OVER 60 WORDS! */}
+          {/* Keep organization links understated while preserving keyboard focus styles. */}
           <p>
-          I am a Software Engineer for <strong>Honeywell Aerospace</strong> developing test software for various vehicles & aircrafts. I graduated with a <i>Bachelor's Degree in Computer Science</i> at the <strong>University of Central Florida</strong>. 
-          My interests lie in Big Data, Machine Learning, Artificial Intelligence, & Game Development. While in my undergrad, I did research on Robot Vision & AI at UCF, Assistive Technology at Cornell University, and Blockchain Consensus Algorithms at Illinois Tech.
+            Renato is a Software Engineer at <strong><a className="about__inline-link" href="https://www.honeywellaerospace.com/" target="_blank" rel="noreferrer">Honeywell Aerospace</a></strong>, developing test software for various vehicles and aircraft. He graduated with a <i>Bachelor's Degree in Computer Science</i> from the <strong><a className="about__inline-link" href="https://www.ucf.edu/" target="_blank" rel="noreferrer">University of Central Florida</a></strong>.{' '}
+            His interests lie in Big Data, Machine Learning, Artificial Intelligence, and Game Development. During his undergraduate studies, he researched Robot Vision and AI at UCF, Assistive Technology at Cornell University, and Blockchain Consensus Algorithms at Illinois Tech.
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Contact</a>
-          <a href="https://github.com/NrgNinja" className='btn' target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AETOMgEdzcW9UbzUVRLRKDZhZE3AdR2l7OF4yP3HvxBK5zzN4CDEYPHL5xendVwRZ5VGJaMIgPDlaPpFpdJ_Pmw30iFn&user=cgbwfMUAAAAJ" className='btn btn-primary' target="_blank" rel="noreferrer">Google Scholar</a>
-          <a href="https://leetcode.com/u/NrgNinja/" className='btn' target="_blank" rel="noreferrer">LeetCode</a>
+          <div className="about__actions">
+            <a href="#contact" className='btn btn-primary'>Contact</a>
+            <a href="https://github.com/NrgNinja" className='btn about__social-button' target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><FaGithub aria-hidden="true" /><span className="about__button-label">GitHub</span></a>
+            <a href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AETOMgEdzcW9UbzUVRLRKDZhZE3AdR2l7OF4yP3HvxBK5zzN4CDEYPHL5xendVwRZ5VGJaMIgPDlaPpFpdJ_Pmw30iFn&user=cgbwfMUAAAAJ" className='btn about__social-button' target="_blank" rel="noreferrer" aria-label="Google Scholar" title="Google Scholar"><SiGooglescholar aria-hidden="true" /><span className="about__button-label">Google Scholar</span></a>
+            <a href="https://leetcode.com/u/NrgNinja/" className='btn about__social-button' target="_blank" rel="noreferrer" aria-label="LeetCode" title="LeetCode"><SiLeetcode aria-hidden="true" /><span className="about__button-label">LeetCode</span></a>
+          </div>
         </div>
       </div>
     </section>

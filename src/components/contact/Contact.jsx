@@ -1,26 +1,23 @@
 import React, { useRef, useState } from 'react';
 import './contact.css';
-import { HiOutlineMail } from 'react-icons/hi';
-import { RiMessengerLine } from 'react-icons/ri';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);  // declare a new state variable
+  const [status, setStatus] = useState('idle');
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_6219wtm', 'template_xzohvkf', form.current, '_KmOnjlN5lcY7jZeU')
-      .then((result) => {
-          console.log(result.text);
-          setMessageSent(true);
-      }, (error) => {
-          console.log(error.text);
-          setMessageSent(false);
-      });
-
-    e.target.reset();
+    if (status === 'sending') return;
+    setStatus('sending');
+    try {
+      // These are EmailJS browser identifiers; delivery settings live in EmailJS.
+      await emailjs.sendForm('service_6219wtm', 'template_xzohvkf', form.current, '_KmOnjlN5lcY7jZeU');
+      form.current.reset(); // Preserve the visitor's message if delivery fails.
+      setStatus('success');
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -29,24 +26,22 @@ const Contact = () => {
       <h2>Contact Information</h2>
 
       <div className="container contact__container">
-        {/* <div className="contact__options">
-        <article className='contact__option'>
-          <HiOutlineMail className='contact__option-item'/>
-          <h4>Outlook</h4>
-          <a href="mailto:diazrenato2001@outlook.com" target="_blank" rel="noreferrer">Email Me</a>
-        </article>
-        <article className='contact__option'>
-          <RiMessengerLine className='contact__option-item'/>
-          <h4>Messenger</h4>
-          <a href="https://m.me/renato.diaz.7731" target="_blank" rel="noreferrer">Message Me</a>
-        </article>
-        </div> */}
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Type Your Full Name' required onChange={() => setMessageSent(false)} />
-          <input type="email" name='email' placeholder='Type Your Email Address' required onChange={() => setMessageSent(false)} />
-          <textarea name="message" rows="7" placeholder='Type Your Message' required onChange={() => setMessageSent(false)}></textarea>
-          <button type='submit' className='btn btn-primary'>Send A <strong>Fancy</strong> Message</button>
-          <p>{messageSent ? "Your fancy message has been sent to Renato :D" : ""}</p>
+        <form ref={form} onSubmit={sendEmail} aria-busy={status === 'sending'}>
+          <fieldset disabled={status === 'sending'}>
+          <label htmlFor="contact-name">Full name</label>
+          <input id="contact-name" autoComplete="name" type="text" name='name' placeholder='Type Your Full Name' required onChange={() => setStatus('idle')} />
+          <label htmlFor="contact-email">Email address</label>
+          <input id="contact-email" autoComplete="email" type="email" name='email' placeholder='Type Your Email Address' required onChange={() => setStatus('idle')} />
+          <label htmlFor="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="7" placeholder='Type Your Message' required onChange={() => setStatus('idle')}></textarea>
+          <button type="submit" className="btn btn-primary">
+            {status === 'sending' ? 'Sending…' : <>Send A <strong>Fancy</strong> Message</>}
+          </button>
+          </fieldset>
+          <p className="contact__status" role="status" aria-live="polite">
+            {status === 'success' && 'Your fancy message has been sent to Renato :D'}
+            {status === 'error' && 'Your message could not be sent. Please try again. Your text is still here.'}
+          </p>
         </form>
       </div>
     </section>

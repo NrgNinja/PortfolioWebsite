@@ -1,0 +1,70 @@
+.typewriter {
+  display: inline-grid;
+  position: relative;
+  white-space: nowrap;
+}
+
+.typewriter__measure, .typewriter__text {
+  grid-area: 1 / 1;
+}
+
+.typewriter__measure {
+  visibility: hidden;
+}
+
+.typewriter__text {
+  justify-self: start;
+}
+
+.typewriter__caret {
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: .95em;
+  margin-left: .15em;
+  margin-top: .12em;
+  background: var(--color-primary);
+}
+
+.typewriter__caret.is-finished {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .typewriter__caret {
+    animation: caret-blink 700ms step-end infinite;
+  }
+
+  .typewriter__caret.is-finished {
+    animation: caret-blink 700ms step-end 2;
+  }
+
+  @keyframes caret-blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+
+  .reveal {
+    opacity: 0;
+    transition: opacity 550ms ease;
+  }
+
+  .reveal.is-visible, .reveal:focus-within {
+    opacity: 1;
+  }
+
+  /* Keep the existing card hover response alongside the entrance transition. */
+  .portfolio__item.reveal {
+    transition: opacity 550ms ease, var(--transition);
+  }
+
+  @media (max-width: 600px) {
+    .reveal {
+      transition-duration: 420ms;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter__caret { display: none; }
+}

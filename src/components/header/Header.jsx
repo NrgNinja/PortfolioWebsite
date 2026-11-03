@@ -1,22 +1,20 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
+import Typewriter from '../motion/Typewriter'
 import ME from '../../assets/renato-nobg.png'
-import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
   return (
-    <header>
-      {/* Added 'home-top' div here. It will act as the top of the Home section. */}
-      <div id='home-top' style={{ height: '1px' }}></div>
-
+    <header id="home-top">
       <div className="container header__container">
         <h1>RENATO</h1>
-        <h2 className="text-light">Software Engineer</h2>
+        <h2 className="text-light" aria-label="Software Engineer">
+          <Typewriter text="Software Engineer" />
+        </h2>
         <CTA />
-        <HeaderSocials />
         <div className="me">
-          <img src={ME} alt="" />
+          <img src={ME} alt="Renato Diaz" />
         </div>
 
         <a href="#footer" className='scroll__down'>Scroll To The Bottom</a>

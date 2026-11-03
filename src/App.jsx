@@ -1,4 +1,5 @@
 import React from 'react'
+import useSectionReveals from './components/motion/useSectionReveals'
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
@@ -10,16 +11,19 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
+  useSectionReveals()
   return (
     <>
         <Header />
         <Nav />
-        <About />
-        <Experience />
-        <Services />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
+        <main>
+          <About />
+          <Experience />
+          <Services />
+          <Portfolio />
+          <Testimonials />
+          <Contact />
+        </main>
         <Footer />
     </>
   )
