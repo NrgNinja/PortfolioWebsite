@@ -11,15 +11,12 @@ const Nav = () => {
 
   useEffect(() => {
     let frame = null
-    // Use section positions so long sections and gaps keep a predictable active link.
+    const sections = Array.from(document.querySelectorAll('header[id], main section[id]')).reverse()
+    // Read current positions so layout changes still affect the active link.
     const updateActiveSection = () => {
-      const sections = document.querySelectorAll('header[id], main section[id]')
-      let current = '#home-top'
-      sections.forEach(section => {
-        if (section.getBoundingClientRect().top <= window.innerHeight * 0.35) {
-          current = `#${section.id}`
-        }
-      })
+      const marker = window.innerHeight * 0.35
+      const section = sections.find(section => section.getBoundingClientRect().top <= marker)
+      const current = section ? `#${section.id}` : '#home-top'
       setActiveNav(current)
       frame = null
     }

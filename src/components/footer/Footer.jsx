@@ -10,8 +10,7 @@ const Footer = () => {
     <footer id="footer">
       <a aria-label="Hacker Typer" href="https://hackertyper.net/#" target='_blank' rel='noreferrer' className='footer__logo'><BiCodeAlt/></a>
       <ul className='permalinks'>
-      {/* eslint-disable-next-line */}
-        <li><a href="#">Home</a></li>
+        <li><a href="#home-top">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Technical Skills</a></li>
         <li><a href="#services">Work Experience</a></li>

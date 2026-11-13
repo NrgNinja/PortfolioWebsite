@@ -47,8 +47,12 @@ const About = () =>
 
           {/* Keep organization links understated while preserving keyboard focus styles. */}
           <p>
-            Renato is a Software Engineer at <strong><a className="about__inline-link" href="https://www.honeywellaerospace.com/" target="_blank" rel="noreferrer">Honeywell Aerospace</a></strong>, developing test software for various vehicles and aircraft. He graduated with a <i>Bachelor's Degree in Computer Science</i> from the <strong><a className="about__inline-link" href="https://www.ucf.edu/" target="_blank" rel="noreferrer">University of Central Florida</a></strong>.{' '}
-            His interests lie in Big Data, Machine Learning, Artificial Intelligence, and Game Development. During his undergraduate studies, he researched Robot Vision and AI at UCF, Assistive Technology at Cornell University, and Blockchain Consensus Algorithms at Illinois Tech.
+            Renato is a Software Engineer at <strong><a className="about__inline-link" href="https://www.honeywellaerospace.com/" target="_blank" rel="noreferrer">Honeywell Aerospace</a></strong>, where he develops test software for space & defense programs and helps verify that changes are ready for release. He graduated with a <i>Bachelor's Degree in Computer Science</i> from the <strong><a className="about__inline-link" href="https://www.ucf.edu/" target="_blank" rel="noreferrer">University of Central Florida</a></strong>.{' '}
+            His research spans robot vision and AI at UCF, assistive technology at Cornell University, and blockchain consensus at Illinois Tech. His interests include machine learning, big data, and game development.
+          </p>
+
+          <p>
+            Outside work, Renato stays active through boxing and other combat sports. His favorite pastime is trying new restaurants and cuisines. He also loves cars, and his dream car is the Porsche 911 Turbo S.
           </p>
 
           <div className="about__actions">

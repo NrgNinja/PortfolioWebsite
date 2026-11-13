@@ -1,6 +1,6 @@
 import React from 'react'
 import { BsLinkedin } from 'react-icons/bs'
-import RESUME from '../../assets/resumeSep2024.pdf'
+import RESUME from '../../assets/resumeDec2026.pdf'
 
 const CTA = () => {
   return (

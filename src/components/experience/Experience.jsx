@@ -1,127 +1,39 @@
 import React from 'react'
 import './experience.css'
-import { BsFillPatchCheckFill } from 'react-icons/bs'
 
-const Experience = () =>
-{
+const skills = [
+  {
+    title: 'Languages',
+    items: ['C', 'C++', 'C#', 'Python', 'Java', 'Rust', 'JavaScript', 'HTML', 'CSS'],
+  },
+  {
+    title: 'Frameworks and platforms',
+    items: ['.NET', 'WPF', 'XAML', 'React', 'Unity', 'Linux', 'Microsoft Access'],
+  },
+  {
+    title: 'Testing and debugging',
+    items: ['Unit, integration, and regression testing', 'Coverity', 'Valgrind', 'Embedded debugging with TRACE32', 'RS-232 & RS-422', 'SCPI'],
+  },
+  {
+    title: 'Development tools',
+    items: ['Git', 'GitHub', 'Subversion', 'TortoiseSVN', 'Jira', 'Visual Studio', 'VS Code'],
+  },
+]
+
+export default function Experience() {
   return (
-    <section id='experience'>
+    <section id="experience">
       <h2>Technical Skills</h2>
-
       <div className="container experience__container">
-        {/* frontend experience */}
-        <div className="experience__frontend">
-          <h3>Programming Languages</h3>
-          <div className="experience__content">
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Java</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>C | C++ | C#</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>HTML/CSS</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Rust</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-
+        {skills.map(({ title, items }) => (
+          <div key={title}>
+            <h3>{title}</h3>
+            <ul className="experience__content">
+              {items.map(item => <li key={item}>{item}</li>)}
+            </ul>
           </div>
-        </div>
-        {/* backend experience */}
-        <div className="experience__backend">
-          <h3>Development Tools</h3>
-          <div className="experience__content">
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Git/GitHub</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Linux (Ubuntu)</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>React JS</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Kibana</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Unity</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsFillPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Agile (Jira)</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-
-          </div>
-        </div>
+        ))}
       </div>
     </section>
   )
 }
-
-export default Experience

@@ -32,6 +32,12 @@
   line-height: 1.45;
 }
 
+.portfolio__contribution {
+  margin: 0 .25rem 1.25rem;
+  color: var(--color-light);
+  font-size: .9rem;
+}
+
 .portfolio__item-cta {
   display: flex;
   flex-wrap: wrap;

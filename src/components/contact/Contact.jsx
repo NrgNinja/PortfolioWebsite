@@ -22,10 +22,12 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h5>Let's Talk Business</h5>
-      <h2>Contact Information</h2>
+      <h2>Contact</h2>
 
       <div className="container contact__container">
+        <p className="contact__alternate">
+          You can also reach Renato on <a href="https://www.linkedin.com/in/renato-diaz/">LinkedIn</a>.
+        </p>
         <form ref={form} onSubmit={sendEmail} aria-busy={status === 'sending'}>
           <fieldset disabled={status === 'sending'}>
           <label htmlFor="contact-name">Full name</label>
@@ -35,12 +37,12 @@ const Contact = () => {
           <label htmlFor="contact-message">Message</label>
           <textarea id="contact-message" name="message" rows="7" placeholder='Type Your Message' required onChange={() => setStatus('idle')}></textarea>
           <button type="submit" className="btn btn-primary">
-            {status === 'sending' ? 'Sending…' : <>Send A <strong>Fancy</strong> Message</>}
+            {status === 'sending' ? 'Sending…' : 'Send message'}
           </button>
           </fieldset>
           <p className="contact__status" role="status" aria-live="polite">
-            {status === 'success' && 'Your fancy message has been sent to Renato :D'}
-            {status === 'error' && 'Your message could not be sent. Please try again. Your text is still here.'}
+            {status === 'success' && 'Your message has been sent.'}
+            {status === 'error' && 'Your message could not be sent. Try again or reach out on LinkedIn. Your draft is still here.'}
           </p>
         </form>
       </div>

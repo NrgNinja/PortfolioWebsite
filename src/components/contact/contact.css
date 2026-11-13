@@ -49,3 +49,8 @@ form button {
   color: var(--color-primary);
   font-size: .9rem;
 }
+
+.contact__alternate {
+  margin-bottom: 1rem;
+  color: var(--color-light);
+}

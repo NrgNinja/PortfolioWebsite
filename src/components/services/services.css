@@ -21,25 +21,22 @@
   font-size: 1.15rem;
 }
 
+.service__head p, .service__head small {
+  color: var(--color-light);
+}
+
+.service__head p {
+  margin-top: .35rem;
+}
+
 .service__list {
-  list-style: none;
-}
-
-.service__list li {
-  display: flex;
-  gap: .75rem;
-  margin-bottom: .65rem;
-}
-
-.service__list-icon {
-  flex-shrink: 0;
-  color: var(--color-primary);
-  margin-top: .3rem;
-}
-
-.service__list p {
+  padding-inline-start: 1.2rem;
   color: var(--color-light);
   font-size: .9rem;
+}
+
+.service__list li + li {
+  margin-top: .65rem;
 }
 
 @media (max-width: 650px) {
